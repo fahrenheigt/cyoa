@@ -1,0 +1,44 @@
+{
+    "scenes": {
+      "scene1": {
+        "id": "scene1",
+        "text": "Vous êtes dans une forêt sombre. Que faites-vous ?",
+        "choices": [
+          {
+            "text": "Explorer la forêt",
+            "nextScene": "scene2",
+            "effects": [
+              { "variable": "courage", "value": 10 }
+            ]
+          },
+          {
+            "text": "Partir rapidement",
+            "nextScene": "scene3",
+            "effects": [
+              { "variable": "courage", "value": -5 }
+            ]
+          }
+        ]
+      },
+      "scene2": {
+        "id": "scene2",
+        "text": "Vous trouvez un vieux coffre. L'ouvrir ?",
+        "choices": [
+          {
+            "text": "Ouvrir le coffre",
+            "nextScene": "scene4",
+            "effects": [
+              { "variable": "curiosity", "value": 10 }
+            ]
+          },
+          {
+            "text": "Ignorer le coffre",
+            "nextScene": "scene5",
+            "effects": [
+              { "variable": "curiosity", "value": -5 }
+            ]
+          }
+        ]
+      }
+    }
+  }
