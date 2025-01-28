@@ -19,42 +19,9 @@ function GameManager() {
       setVariables(newVariables);
     }
 
-    // Passer à la scène suivante ou changer de chapitre
-    if (choice.nextChapter) {
-      loadChapter(choice.nextChapter);
-    } else {
-      setCurrentScene(choice.nextScene);
-    }
+    // Passer à la scène suivante
+    setCurrentScene(choice.nextScene);
   };
-
-  // Charger un nouveau chapitre
-  const loadChapter = (chapterId) => {
-    import(`../data/chapters/${chapterId}.json`)
-      .then((chapter) => {
-        setCurrentChapter(chapter.default);
-        setCurrentScene('scene1'); // Commencer à la première scène du nouveau chapitre
-      })
-      .catch((error) => console.error('Erreur lors du chargement du chapitre :', error));
-  };
-
-  // Sauvegarder et charger la progression
-  useEffect(() => {
-    const savedData = localStorage.getItem('gameProgress');
-    if (savedData) {
-      const { scene, variables, chapter } = JSON.parse(savedData);
-      setCurrentScene(scene);
-      setVariables(variables);
-      setCurrentChapter(chapter);
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('gameProgress', JSON.stringify({
-      scene: currentScene,
-      variables: variables,
-      chapter: currentChapter,
-    }));
-  }, [currentScene, variables, currentChapter]);
 
   // Récupérer la scène actuelle
   const scene = currentChapter.scenes[currentScene];
@@ -77,9 +44,6 @@ function GameManager() {
         <p>Dialogue avec NPC1 : {variables.dialogueWithNPC1}</p>
         <p>Clé obtenue : {variables.hasKey ? "Oui" : "Non"}</p>
       </div>
-      <button onClick={() => localStorage.removeItem('gameProgress')}>
-        Réinitialiser la progression
-      </button>
     </div>
   );
 }

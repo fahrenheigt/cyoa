@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'mixins';
+@import 'buttons';
+@import 'menu';
+
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: $font-stack;
+  color: $text-color;
+}
+
+.characters-page, .bestiary-page, .regions-page {
+  padding: 20px;
+
+  .character-card, .creature-card, .region-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+}

@@ -1,0 +1,22 @@
+[
+    {
+      "id": "npc1",
+      "name": "Elena",
+      "description": "Une magicienne puissante et mystérieuse.",
+      "traits": {
+        "physique": "Cheveux noirs, yeux violets",
+        "personnalité": "Calme et réfléchie"
+      },
+      "relationWithPlayer": 50
+    },
+    {
+      "id": "npc2",
+      "name": "Gorak",
+      "description": "Un guerrier robuste et loyal.",
+      "traits": {
+        "physique": "Grand et musclé",
+        "personnalité": "Brut mais honnête"
+      },
+      "relationWithPlayer": 70
+    }
+  ]

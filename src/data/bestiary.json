@@ -1,0 +1,20 @@
+[
+    {
+      "id": "creature1",
+      "name": "Dragon des montagnes",
+      "description": "Un dragon majestueux vivant dans les montagnes.",
+      "traits": {
+        "taille": "Enorme",
+        "dangerosité": "Élevée"
+      }
+    },
+    {
+      "id": "creature2",
+      "name": "Loup des bois",
+      "description": "Un loup sauvage et rapide.",
+      "traits": {
+        "taille": "Moyenne",
+        "dangerosité": "Modérée"
+      }
+    }
+  ]

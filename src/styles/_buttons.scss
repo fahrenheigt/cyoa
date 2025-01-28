@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'mixins';
+
+button {
+  @include button-style;
+  background-color: $primary-color;
+  color: white;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}

@@ -1,0 +1,20 @@
+[
+    {
+      "id": "region1",
+      "name": "Forêt d'Elendil",
+      "description": "Une forêt dense et mystérieuse.",
+      "traits": {
+        "climat": "Tempéré",
+        "habitants": "Elfes, animaux sauvages"
+      }
+    },
+    {
+      "id": "region2",
+      "name": "Désert de Karak",
+      "description": "Un désert aride et dangereux.",
+      "traits": {
+        "climat": "Chaud et sec",
+        "habitants": "Nomades, créatures du désert"
+      }
+    }
+  ]
